@@ -1,0 +1,74 @@
+.register-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--gray-50);
+  padding: var(--spacing-lg);
+}
+
+.register-card {
+  max-width: 600px;
+  width: 100%;
+  background: white;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-lg);
+  padding: var(--spacing-2xl);
+  border: 1px solid var(--gray-200);
+}
+
+.register-header {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.register-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: var(--primary-600);
+  border-radius: var(--border-radius-full);
+  font-size: 24px;
+  margin-bottom: var(--spacing-lg);
+}
+
+.register-title {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: var(--spacing-sm);
+}
+
+.register-subtitle {
+  font-size: var(--font-size-sm);
+  color: var(--gray-600);
+}
+
+.register-link {
+  color: var(--primary-600);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.register-link:hover {
+  color: var(--primary-700);
+  text-decoration: underline;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+@media (max-width: 640px) {
+  .register-container {
+    padding: var(--spacing-md);
+  }
+  
+  .register-card {
+    padding: var(--spacing-xl);
+  }
+}
